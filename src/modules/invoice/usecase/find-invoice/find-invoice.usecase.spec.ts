@@ -1,8 +1,8 @@
 import FindInvoiceUseCase from "./find-invoice.usecase"
-import Address from "../../domain/value-object/address"
-import InvoiceItem from "../../domain/invoice-item"
 import Invoice from "../../domain/invoice.entity"
 import Id from "../../../@shared/domain/value-object/id.value-object"
+import Address from "../../../@shared/domain/value-object/address"
+import InvoiceItem from "../../domain/invoice-item.value-object"
 
 const MockRepository = () => ({
   add: jest.fn(),

@@ -1,7 +1,4 @@
 import GenerateInvoiceUseCase from "./generate-invoice.usecase"
-import Address from "../../domain/value-object/address"
-import InvoiceItem from "../../domain/invoice-item"
-import Id from "../../../@shared/domain/value-object/id.value-object"
 
 const MockRepository = () => ({
   add: jest.fn(),

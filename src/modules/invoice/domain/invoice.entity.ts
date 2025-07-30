@@ -59,4 +59,8 @@ export default class Invoice extends BaseEntity implements AggregateRoot {
   set items(items: InvoiceItem[]) {
     this._items = items
   }
+
+  total(): number {
+    return this._items.reduce((total, item) => total + item.price, 0)
+  }
 }
